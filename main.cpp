@@ -28,5 +28,6 @@ bool isAnagramEqual(const string &first, const string &second) {
 int main() {
     string first = "TirstSecondThirdF";
     string second = "FirstSecondThirdT";
-    cout << std::boolalpha << isAnagramEqual(first, second) << endl;
+    if (first.length() != second.length()) cout << false << endl;
+    else cout << std::boolalpha << isAnagramEqual(first, second) << endl;
 }
